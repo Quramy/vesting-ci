@@ -1,6 +1,6 @@
 # vesting-ci
 
-This is a sample repository for automation testing Vim plugin using NeoBundle and vesting.
+This is a sample repository for automation testing Vim plugin using [NeoBundle](https://github.com/Shougo/neobundle.vim) and [Vesting](https://github.com/Shougo/vesting).
 
 ## Running test of Vim plugin
 
