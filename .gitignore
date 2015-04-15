@@ -2,5 +2,6 @@
 *.swo
 *un~
 *.log
+qiita.md
 neobundle.vim/
 bundle/

@@ -25,7 +25,7 @@ if [ $? -eq 0 ]; then
   echo "`date "+[%Y-%m-%dT%H:%M:%S]"` Test was failed."
   exit 1
 else
-  echo "`date "+[%Y-%m-%dT%H:%M:%S]"` Test was succeed."
+  echo "`date "+[%Y-%m-%dT%H:%M:%S]"` Test was succeeded."
   exit 0
 fi
 
