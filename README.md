@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/Quramy/vesting-ci.svg?branch=master)](https://travis-ci.org/Quramy/vesting-ci)
 # vesting-ci
 
 This is a sample repository for automation testing Vim plugin using [NeoBundle](https://github.com/Shougo/neobundle.vim) and [Vesting](https://github.com/Shougo/vesting).

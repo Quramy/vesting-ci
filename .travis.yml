@@ -4,5 +4,7 @@ env:
   - GIT_COMMITTER_EMAIL=yosuke.kurami@gmail.com
   - GIT_AUTHOR_NAME=Quramy
   - GIT_AUTHOR_EMAIL=yosuke.kurami@gmail.com
+before_install:
+- vim --version
 script:
 - sh runtest.sh
