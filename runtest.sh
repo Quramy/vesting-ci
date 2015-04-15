@@ -3,8 +3,11 @@
 VIMRC_FILE="vest/.vimrc"
 DRIVER_FILE="vest/_runner"
 RESULT_FILE="vest/test_result.log"
-VIM_BUILD=1
-VIM_INSTALL_DIR=`pwd`/local
+VIM_BUILD=0
+# If you want to build Vim runtime, comment out the following: 
+#
+# VIM_BUILD=1
+# VIM_INSTALL_DIR=`pwd`/local
 
 if [ "${VIM_BUILD}" -eq 1 ]; then
   echo "`date "+[%Y-%m-%dT%H:%M:%S]"` Use local Vim."

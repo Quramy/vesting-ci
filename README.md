@@ -27,7 +27,7 @@ My approach is so simple:
  * Configure `runtimepath` and plugins the test depends on install using `:NeoBundleInstall` in the rc file.
 1. Create a Vim macro file to run vest(`runner.vim`).
  * This script run vesting and write result to a file.
-1. Run Vim at silent-mode, `vim -u test_config.vimrc -s runner.vim`.
+1. Run Vim at silent-mode, `vim -u vest/.vimrc -s vest/runner`.
 1. If result file contains `[Fail]`, the test is failed. Otherwise, the test is succeed.
 
 
