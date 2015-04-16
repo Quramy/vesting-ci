@@ -57,12 +57,17 @@ echo "`date "+[%Y-%m-%dT%H:%M:%S]"` Result: (${RESULT_FILE})"
 cat ${RESULT_FILE}
 
 grep -E "\[Fail\]" ${RESULT_FILE} > /dev/null
-
 if [ $? -eq 0 ]; then
   echo "`date "+[%Y-%m-%dT%H:%M:%S]"` Test was failed."
   exit 1
-else
-  echo "`date "+[%Y-%m-%dT%H:%M:%S]"` Test was succeeded."
-  exit 0
 fi
+
+grep -E "\[Error\]" ${RESULT_FILE} > /dev/null
+if [ $? -eq 0 ]; then
+  echo "`date "+[%Y-%m-%dT%H:%M:%S]"` Test was failed."
+  exit 1
+fi
+
+echo "`date "+[%Y-%m-%dT%H:%M:%S]"` Test was succeeded."
+exit 0
 
